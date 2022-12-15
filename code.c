@@ -208,6 +208,7 @@ int main(int argc, char **argv) {
 
     // разбираемся с аргументами командной строки
     handle_input_format(argc, argv);
+    check_args();
     handle_output_format(argc, argv);
 
     pthread_t philosophers[PHIL_NUMBER];    // pthread потоки - философы
